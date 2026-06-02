@@ -1,47 +1,130 @@
 <!DOCTYPE html>
 <html lang="sv">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Movies</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movies</title>
 
-  <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="movies.html">Movies</a></li>
-          <li><a href="series.html">Series</a></li>
-          <li><a href="music.html">Music</a></li>
-        </ul>
-      </nav>
-    </header>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
 
-    <main>
-      <p>Film 1</p>
-      <p>Utgivningsår:</p>
-      <p>Skådespelare:</p>
-      <p>IMDB-länk:</p>
-      <p>Genre:</p>
+<body>
 
-      <p>Film 2</p>
-      <p>Utgivningsår:</p>
-      <p>Skådespelare:</p>
-      <p>IMDB-länk:</p>
-      <p>Genre:</p>
+<header></header>
 
-      <p>Film 3</p>
-      <p>Utgivningsår:</p>
-      <p>Skådespelare:</p>
-      <p>IMDB-länk:</p>
-      <p>Genre:</p>
-    </main>
-    <footer>
-      <p>© 2026</p>
-    </footer>
-    <script src="init.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  </body>
+<main class="container my-5">
+
+  <h1 class="text-center mb-5">My Favorite Movies</h1>
+
+  <div class="row g-4">
+
+    <div class="col-12 col-md-4">
+      <div class="card h-100 shadow">
+
+        <img src="Maze.jpg"
+             class="card-img-top img-fluid"
+             alt="The Maze Runner">
+
+        <div class="card-body text-center">
+
+          <h5 class="card-title">The Maze Runner</h5>
+
+          <button class="btn btn-primary"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#mazeInfo">
+            Show Info
+          </button>
+
+          <div class="collapse mt-3" id="mazeInfo">
+            <p><strong>Utgivningsår:</strong> 2014</p>
+            <p><strong>Skådespelare:</strong> Dylan O'Brien, Kaya Scodelario</p>
+            <p><strong>Genre:</strong> Sci-Fi / Action</p>
+
+            <a href="https://www.imdb.com/title/tt1790864/"
+               target="_blank"
+               class="btn btn-outline-primary btn-sm">
+              IMDB
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card h-100 shadow">
+
+        <img src="Grown.jpg"
+             class="card-img-top img-fluid"
+             alt="Grown Ups">
+
+        <div class="card-body text-center">
+
+          <h5 class="card-title">Grown Ups</h5>
+
+          <button class="btn btn-primary"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#grownupsInfo">
+            Show Info
+          </button>
+
+          <div class="collapse mt-3" id="grownupsInfo">
+            <p><strong>Utgivningsår:</strong> 2010</p>
+            <p><strong>Skådespelare:</strong> Adam Sandler, Kevin James</p>
+            <p><strong>Genre:</strong> Comedy</p>
+
+            <a href="https://www.imdb.com/title/tt1375670/"
+               target="_blank"
+               class="btn btn-outline-primary btn-sm">
+              IMDB
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-12 col-md-4">
+      <div class="card h-100 shadow">
+
+        <img src="Fast.jpg"
+             class="card-img-top img-fluid"
+             alt="Fast & Furious">
+
+        <div class="card-body text-center">
+
+          <h5 class="card-title">Fast & Furious</h5>
+
+          <button class="btn btn-primary"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#fastInfo">
+            Show Info
+          </button>
+
+          <div class="collapse mt-3" id="fastInfo">
+            <p><strong>Utgivningsår:</strong> 2009</p>
+            <p><strong>Skådespelare:</strong> Vin Diesel, Paul Walker</p>
+            <p><strong>Genre:</strong> Action</p>
+
+            <a href="https://www.imdb.com/title/tt1013752/"
+               target="_blank"
+               class="btn btn-outline-primary btn-sm">
+              IMDB
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer></footer>
+
+<script src="init.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
 </html>

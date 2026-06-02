@@ -7,7 +7,7 @@ Din uppgift är att styla sidan med hjälp av Bootstrap. Du har mer frihet i den
 - [Bootstrap dokumentation](https://getbootstrap.com/docs/5.3/getting-started/introduction/)
 - För att testa sidan på olika skärmstorlekar: `Ctrl + Shift + I` och sedan `Ctrl + Shift + M`
 
-### Bootstrap-koncept att använda
+### Bootstrap-koncept att använda 
 - Container
 - Row
 - Column
